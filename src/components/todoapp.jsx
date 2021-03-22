@@ -66,7 +66,7 @@ class ToDoList extends Component {
         return (  
             <React.Fragment>
                 
-                <ul className="row">{
+                <ul className="row" >{
                     <li className={this.doneClass()}>
                         {this.props.task}
                         <i className="far fa-check-square m-2" onClick={()=>this.props.onDone(this.props.task)}></i>
@@ -92,7 +92,7 @@ class ToDoAdd extends Component {
             <React.Fragment>
                <h5>Add New Task</h5> 
                <input className="m-2" type="text" placeholder="Task name" onChange={this.addTask} />
-               <button className="btn btn-primary m-2" onClick={()=>this.props.onAdd(this.state.Task)}>Add</button>
+               <button className="btn btn-success m-2" onClick={()=>this.props.onAdd(this.state.Task)}>Add</button>
             </React.Fragment>
         );
     }

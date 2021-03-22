@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Product from './product';
+
+
+import Product from './components/product';
+import ToDoApp from './components/todoapp';
+import App from './components/app'
+
+
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
-import ToDoApp from './todoapp';
-
 
 ReactDOM.render(
-    <div className="m-5">
-        <ToDoApp />
-        <Product />
-    </div>
-    
+    <App/>
     ,document.querySelector('#root'));
