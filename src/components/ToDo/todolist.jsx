@@ -14,12 +14,12 @@ class ToDoList extends Component {
     render() { 
         
         return (  
-            <React.Fragment>
+            <div className="container center" style={{marginTop:'2%'}}>
                 
                 <ul className="row" >
                     <ToDoItem key={this.props.task.id} className={this.props.className} onDelete={this.props.onDelete} onDone={this.props.onDone} task={this.props.task} done={this.props.done}/>
                 </ul>
-            </React.Fragment>
+            </div>
         );
     }
 }
